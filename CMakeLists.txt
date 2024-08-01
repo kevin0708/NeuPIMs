@@ -3,7 +3,7 @@ set(project_name "AiFrameworkSim")
 project(${project_name})
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-include("${CMAKE_SOURCE_DIR}/build/conanbuildinfo.cmake")
+include("${PROJECT_SOURCE_DIR}/build/conanbuildinfo.cmake")
 conan_basic_setup()
 
 # find_package(Boost 1.70 REQUIRED COMPONENTS program_options)
