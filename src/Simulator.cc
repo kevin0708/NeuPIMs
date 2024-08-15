@@ -38,6 +38,7 @@ Simulator::Simulator(SimulationConfig config) : _config(config), _core_cycles(0)
     // Create core objects
     _cores.resize(config.num_cores);
     _n_cores = config.num_cores;
+    printf("n_cores is %d\n", _n_cores);
     _n_memories = config.dram_channels;
     for (int core_index = 0; core_index < _n_cores; core_index++) {
         spdlog::info("initializing NeuPIM SystolicWS cores.");
